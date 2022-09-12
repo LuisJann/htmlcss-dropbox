@@ -69,12 +69,31 @@ h1{
     width: 60%;
     height: 1000px;
     margin: 0 auto;
+    margin-top: 30px;
+
 
 
     /* debug */
     background-color: red;
 }
 
-h3{
+h2{
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.column{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    ;
+
+    /* debug */
+    background-color: azure;
 }
