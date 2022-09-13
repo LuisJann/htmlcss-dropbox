@@ -2,7 +2,27 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+img{
+    max-width: 100%;
+}
+
+.black{
+    color: black;
+    text-decoration: none;
+}
+
+.grey{
+    color: grey;
+}
+
+.padding-top{
+ padding-top: 40px;
+}
+
+
 
 /* HEADER */
 
@@ -10,9 +30,11 @@ header{
     width: 100vw;
     height: 80px;
     position: fixed;
+    top: 0%;
+    left: 0%;
 
     /* debug */
-    background-color: black;
+    background-color: white;
 }
 
 /* NAV */
@@ -27,36 +49,69 @@ header{
 }
 
 .nav-left{
-    color: white;
     list-style-type: none;
     display: flex;
 }
 
 .nav-right{
-    color: white;
     list-style-type: none;
     display: flex;
 }
 
 .nav-item{
-    padding-left: 5px;
-    padding-right: 5px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    vertical-align: middle;
 }
 
 .banner{
     background-color:#b4d0e7 ;
     width: 100%;
-    height: 500px;
-    padding-top: 80px;
+    padding-top: 50px;
+
+}
+
+.banner-description{
+    height: 100%;
+}
+
+.text-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-banner>p{
+    padding-bottom: 20px;
+}
+
+#principal-title{
+    font-size: 3em;
+}
+
+.withdrawal{
+    margin-top: 10px;
+    font-size: .9em;
+}
+
+.arrow{
+    font-size: 2em;
+    padding-top: 50px;
+    justify-content: flex-end;
 }
 
 .container-l{
     width: 70%;
     height: 450px;
     margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 h1{
@@ -69,41 +124,67 @@ h1{
     width: 60%;
     height: 1000px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
+    max-width: 1200px;
 
 
 
     /* debug */
-    background-color: red;
+    /* background-color: red; */
 }
 
 .banner-description{
     display: flex;
     width: 100%;
     height: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
 
     /* debug */
-    background-color: aquamarine;
-    border: 1px solid black;
+    /* background-color: aquamarine;
+    border: 1px solid black; */
 }
 
 .img-banner{
-    width: 100%;
+    width: 70%;
+    min-height: 200px;
     height: 100%;
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
    
     /* debug */
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 .text-banner{
     width: 30%;
     height: 85%;
+    min-height: 300px;
 
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-h2{
+.b-button{
+    padding: 7px;
+    background-color: #0161ff;
+    color: white;
+    border: 0.5px solid #0161ff;
+    border-radius: 5px;
+}
+
+.w-button{
+    padding: 7px;
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+
+.price-column-title{
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -121,20 +202,52 @@ h2{
 .card{
     width: 30%;
     height: 100%;
-    border: 1px solid black;
+    border: .8px solid grey;
+    opacity: .8;
     ;
 
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 .audience{
     width: 100%;
     height: 30px;
+    text-align: center;
+    border-bottom: .8px solid grey;
+    padding-top: 5px;
 
     /* debug */
-    background-color: azure;
-    border: 1px solid black;
+    /* background-color: azure;  */
+}
+
+.container-card{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.level-title{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+.month{
+    padding-top: 15px;
+    color: grey;
+    font-style: italic;
+}
+
+.line{
+    width: 15%;
+    margin-top: 20px;
 }
 
 .enterprise{
@@ -143,7 +256,7 @@ h2{
     margin-top: 25px;
     
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
     border: 1px solid black;
 }
 
@@ -157,25 +270,25 @@ h2{
     align-items: center;
 
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 .text-partner{
-    width: 50%;
+    width: 40%;
     padding-left: 20px;
 }
 
 .img-partner{
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-image: url(../img/partner.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
     /* debug */
-    background-color: azure;
-    border: 1px solid black;
+    /* background-color: azure;
+    border: 1px solid black; */
 }
 
 /* business section */
@@ -183,7 +296,7 @@ h2{
     margin-top: 50px;
     
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
 
 }
 
@@ -198,24 +311,43 @@ h2{
     flex-wrap: wrap;
 
     /* debug */
-    background-color: azure;
-    border: 1px solid black;
+    /* background-color: azure; */
+    /* border: 1px solid black; */
 }
 
 .card-business{
     width: calc(100% / 3);
     height: 250px;
+    display: flex;
+    flex-direction: column;
 
     /* debug */
-    background-color: blueviolet;
-    border: 1px solid black;
+    /* background-color: blueviolet; */
+    /* border: 1px solid black; */
 }
 
+.business-img{
+    max-width: 60%;
+}
+
+.business-title{
+    padding: 7px 5px 7px 5px;
+    font-size: 1em;
+}
+
+
+.business-text{
+    font-size: .8em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
 /* PARTNER SECTION */
 
 .partner-section{
     width: 100%;
-    height: 350px;
+    height: 550px;
     margin-top: 1300px;
     display: flex;
 
@@ -238,10 +370,18 @@ h2{
 .square-partner{
     width: 50%;
     height: 50%;
-    max-width: 50%;
 
     /* debug */
     border: 1px solid black;
+}
+
+.partner-title{
+    padding: 10px;
+    font-size: 2em;
+}
+
+.partner-text{
+    padding: 0 10px 0 10px;
 }
 
 .trial{
