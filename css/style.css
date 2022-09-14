@@ -37,8 +37,6 @@ header{
     top: 0%;
     left: 0%;
     z-index: 999;
-
-    /* debug */
     background-color: white;
 }
 
@@ -51,6 +49,7 @@ header{
     height: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    vertical-align: middle;
 }
 
 .nav-left{
@@ -117,9 +116,6 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-
-    /* debug */
-    /* background-color: azure; */
 }
 
 h1{
@@ -133,12 +129,12 @@ h1{
     height: 1000px;
     margin: 0 auto;
     margin-top: 40px;
-    max-width: 1200px;
+    min-width: 1200px;
+    max-width: 1400px;
+}
 
-
-
-    /* debug */
-    /* background-color: red; */
+.input-radio{
+    margin-left: 20px;
 }
 
 .banner-description{
@@ -147,30 +143,23 @@ h1{
     height: 80%;
     max-width: 1200px;
     margin: 0 auto;
-
-
-    /* debug */
-    /* background-color: aquamarine;
-    border: 1px solid black; */
 }
 
 .img-banner{
     width: 70%;
     min-height: 200px;
-    height: 100%;
     background-image: url(../img/jumbo.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-   
-    /* debug */
-    /* border: solid 1px black; */
+    min-width: 500px;
 }
 
 .text-banner{
     width: 30%;
     height: 85%;
     min-height: 300px;
+    min-width: 300px;
 
     /* debug */
     /* border: 1px solid black; */
@@ -211,10 +200,6 @@ h1{
     width: 30%;
     border: .8px solid grey;
     opacity: .8;
-    ;
-
-    /* debug */
-    /* background-color: azure; */
 }
 
 .audience{
@@ -223,9 +208,6 @@ h1{
     text-align: center;
     border-bottom: .8px solid grey;
     padding-top: 5px;
-
-    /* debug */
-    /* background-color: azure;  */
 }
 
 .item-card{
@@ -266,10 +248,7 @@ h1{
     height: 20%;
     margin-top: 25px;
     position: relative;
-    
-    /* debug */
-    /* background-color: azure; */
-    border: 1px solid black;
+    border: .8px solid gray;
 }
 
 .position-b{
@@ -286,9 +265,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* debug */
-    /* background-color: azure; */
 }
 
 .text-partner{
@@ -303,19 +279,12 @@ h1{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* debug */
-    /* background-color: azure;
-    border: 1px solid black; */
 }
 
 /* business section */
 .business-section{
     margin-top: 50px;
     padding-bottom: 50px;
-    
-    /* debug */
-    /* background-color: azure; */
 
 }
 
@@ -328,10 +297,6 @@ h1{
     height: 500px;
     display: flex;
     flex-wrap: wrap;
-
-    /* debug */
-    /* background-color: azure; */
-    /* border: 1px solid black; */
 }
 
 .card-business{
@@ -339,11 +304,7 @@ h1{
     height: 250px;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-
-    /* debug */
-    /* background-color: blueviolet; */
-    /* border: 1px solid black; */
+    margin-top: 60px;
 }
 
 .business-img{
@@ -380,15 +341,14 @@ h1{
     height: 550px;
     margin-top: 1400px;
     display: flex;
+    justify-content: center;
 
     /* debug */
-    background-color: azure;
     border: 1px solid black;
 }
 
 .square{
     width: 33%;
-   height: 100%;
    display: flex;
    flex-wrap: wrap;
    
@@ -398,8 +358,7 @@ h1{
 }
 
 .square-partner{
-    width: 50%;
-    height: 50%;
+    width: calc(100% / 2);
 
     /* debug */
     border: 1px solid black;
