@@ -449,7 +449,9 @@ body{
 
 }
 
-
+.position{
+    position: relative;
+}
 
 .container-faq{
     width: 60%;
@@ -463,21 +465,35 @@ body{
 }
 
 .question{
-    display: inline-block;
-    display: block;
+    position: relative;
 }
 
 .answer{
     display: none;
     padding-top: 20px;
+    font-size: .7em;
+    padding-right: 150px;
 }
 
 .arrow-faq{
-    padding-left: 250px;
+    position: absolute;
+    right: 50px;
 }
 
-.arrow-faq:hover .answer{
+.up{
+    display: none;
+}
+
+.question-container:hover .answer{
     display: block;
+}
+
+.question-container:hover .up{
+    display: block;
+}
+
+.question-container:hover .down{
+    display: none;
 }
 
 
