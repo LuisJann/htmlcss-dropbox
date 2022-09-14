@@ -18,6 +18,10 @@ img{
     color: grey;
 }
 
+.blu{
+    color: blue;
+}
+
 .padding-top{
  padding-top: 30px;
 }
@@ -267,6 +271,7 @@ body{
 
 .item-card{
     padding-top: 10px;
+    margin-left: -15px;
 }
 
 .container-card{
@@ -444,30 +449,37 @@ body{
 
 }
 
-.scomparsa{
-    display: none;
-}
+
 
 .container-faq{
     width: 60%;
     margin: 0 auto;
     margin-bottom: 100px;
-    position: relative;
 }
 
 .container-faq>hr{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.question{
+    display: inline-block;
+    display: block;
+}
+
+.answer{
+    display: none;
+    padding-top: 20px;
 }
 
 .arrow-faq{
-    position: absolute;
-    right: 40px;
+    padding-left: 250px;
 }
 
-.arrow-faq:hover .scomparsa{
-    display: static;
+.arrow-faq:hover .answer{
+    display: block;
 }
+
 
 /* FOOTER */
 
